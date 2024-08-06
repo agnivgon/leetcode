@@ -7,7 +7,7 @@ class Solution {
         // Check if both the string length are same
         // Then maintain a map of char and count, loop through each char in the string
         // keep adding occurence of char from a string and keep subtracting from the other
-        // At the end if map values contain greater than 0 then it's not anagram
+        // At the end if map values contain non zero then it's not anagram
         if (s.length() != t.length()) {
             return false;
         }
@@ -18,7 +18,7 @@ class Solution {
         }
 
         for (int count : charCountMap.values()) {
-            if (count > 0) {
+            if (count != 0) {
                 return false;
             }
         }
