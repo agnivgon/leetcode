@@ -1,7 +1,6 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
         
-
         // 1st approach
         // TC: O(N) and SC: O(N)
         // Check if both the string length are same
